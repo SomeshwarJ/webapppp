@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
 // configuration ===============================================================
-mongoose.connect(process.env.CUSTOMCONNSTR_MyConnectionString || database.localUrl); 	// Connect to local MongoDB instance. A remoteUrl is also available (modulus.io)
+mongoose.connect("mongodb://someshwar:IdNAM459o2LKEJ3IAPqF5rSGwi6VXpL2wGemCPhv0IxsRsR5iBstTCBjGbcVgFcz1KwU7fj6UHkxACDbQheFqQ==@someshwar.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@someshwar@"); 	// Connect to local MongoDB instance. A remoteUrl is also available (modulus.io)
 
 app.use(express.static('./public')); 		// set the static files location /public/img will be /img for users
 app.use(morgan('dev')); // log every request to the console
